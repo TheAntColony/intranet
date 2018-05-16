@@ -1,0 +1,44 @@
+.leaveInfo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.totalLeave {
+  margin-bottom: 20px;
+}
+
+.calendarRow {
+  margin-top: 20px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.requestLeaveBtn {
+  margin-left: 10px;
+  float: left;
+}
+
+/* Ant design related style */
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.events .ant-badge-status {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.notes-month {
+  text-align: center;
+  font-size: 28px;
+}
+.notes-month section {
+  font-size: 28px;
+}

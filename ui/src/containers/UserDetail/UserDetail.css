@@ -1,0 +1,20 @@
+.fieldDescription {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.objectDescription {
+  font-weight: 600;
+  font-size: 18px;
+  color:lightblue;
+  margin-bottom: 10px;
+}
+
+.btnPadding20 {
+  padding: 20px;
+}
+
+.btnMargin10 {
+  margin: 10px;
+}

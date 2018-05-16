@@ -1,0 +1,26 @@
+
+.card {
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: 10px;
+  padding: 20px;
+}
+
+.row {
+  margin: 20px;
+}
+
+.colDesc {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.leavesEvaluatedP {
+  font-size: 24px;
+  font-weight: 500;
+}

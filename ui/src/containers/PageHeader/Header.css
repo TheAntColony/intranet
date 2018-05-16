@@ -1,0 +1,24 @@
+.logo {
+  width: 125px;
+  height: 30px;
+  background-image: url('../../images/ant_logo.png'); 
+  background-size: 125px 30px; 
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.header {
+  background: '#fff';
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}

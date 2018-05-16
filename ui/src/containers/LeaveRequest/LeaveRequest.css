@@ -1,0 +1,21 @@
+.divField {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  width: 100%;
+}
+
+.fieldDescription {
+  font-size: 14px;
+  font-weight: 500;
+  width: 100px;
+}
+
+.reason {
+  margin-left: 10px;
+}
+
+.requestBtnDiv {
+  display: flex;
+  justify-content: center;
+}

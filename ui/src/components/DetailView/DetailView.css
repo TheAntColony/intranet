@@ -1,0 +1,8 @@
+.detailFieldP {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fieldDescription {
+  width: 20%;
+}

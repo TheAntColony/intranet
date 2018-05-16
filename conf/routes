@@ -1,0 +1,87 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Serve index page from public directory
+GET         /                                           WebApi.Controllers.FrontendController.index()
+
+# User related routes
+GET         /api/users/:offset/:limit                   WebApi.Controllers.UserController.getWitLimitAndOffset(offset: Long, limit: Long)
+
+POST        /api/users                                  WebApi.Controllers.UserController.post
+
+GET         /api/users/total                            WebApi.Controllers.UserController.total
+
+GET         /api/users/me                               WebApi.Controllers.UserController.me
+
+GET         /api/users/:id                              WebApi.Controllers.UserController.getById(id: Long)
+
+DELETE      /api/users/:id                              WebApi.Controllers.UserController.delete(id: Long)
+
+PUT         /api/users/:id/details                      WebApi.Controllers.UserController.updateDetails(id: Long)
+
+POST        /api/users/:id/skills                       WebApi.Controllers.UserController.addSkills(id: Long)
+
+POST        /api/users/:id/projects                     WebApi.Controllers.UserController.addProjects(id: Long)
+
+# User interesting info routes
+POST        /api/interestingInfo/:userId                WebApi.Controllers.InterestingInfoController.post(userId: Long)
+
+GET         /api/interestingInfo/:id                    WebApi.Controllers.InterestingInfoController.getById(id: Long)
+
+GET         /api/interestingInfo                        WebApi.Controllers.InterestingInfoController.get
+
+# Account related routes
+POST        /token                                      WebApi.Controllers.AccountController.generateToken
+
+GET         /account                                    WebApi.Controllers.AccountController.index
+
+# Skills related routes
+GET         /api/skills                                 WebApi.Controllers.SkillController.get
+
+GET         /api/skills/:id                             WebApi.Controllers.SkillController.getById(id: Long)
+
+POST        /api/skills                                 WebApi.Controllers.SkillController.post
+
+DELETE      /api/skills/:id                             WebApi.Controllers.SkillController.delete(id: Long)
+
+# Project related routes
+GET         /api/projects/:id                           WebApi.Controllers.ProjectController.getById(id: Long)
+
+GET         /api/projects                               WebApi.Controllers.ProjectController.get
+
+# To be restful we send skills on separate route then project creation
+POST        /api/projects/:id/skills                    WebApi.Controllers.ProjectController.addSkills(id: Long)
+
+POST        /api/projects                               WebApi.Controllers.ProjectController.post
+
+DELETE      /api/projects/:id                           WebApi.Controllers.ProjectController.delete(id: Long)
+
+# Leave category routes
+GET         /api/leaves/categories                      WebApi.Controllers.LeaveCategoryController.get
+
+GET         /api/leaves/categories/:id                  WebApi.Controllers.LeaveCategoryController.getById(id: Long)
+
+POST        /api/leaves/categories                      WebApi.Controllers.LeaveCategoryController.post
+
+DELETE      /api/leaves/categories/:id                  WebApi.Controllers.LeaveCategoryController.delete(id: Long)
+
+# Leave related routes
+GET         /api/leaves                                 WebApi.Controllers.LeaveController.get
+
+GET         /api/leaves/total/pending                   WebApi.Controllers.LeaveController.getTotalPending
+
+GET         /api/leaves/pending                         WebApi.Controllers.LeaveController.getPending
+
+GET         /api/leaves/:id                             WebApi.Controllers.LeaveController.getById(id: Long)
+
+POST        /api/leaves                                 WebApi.Controllers.LeaveController.post
+
+PUT         /api/leaves/:id                             WebApi.Controllers.LeaveController.update(id: Long)
+
+DELETE      /api/leaves/:id                             WebApi.Controllers.LeaveController.delete(id: Long)
+
+
+
+# Serve static assets under public directory
+GET         /*file                                      WebApi.Controllers.FrontendController.assetOrDefault(file)
