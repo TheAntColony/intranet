@@ -29,8 +29,12 @@ SQL script for database creation, routes and config are in config folder.
 
 Frontend is React code separated in containers, components, services, routes and utils folder structure
 
-`Components` are views that don't hold state and get their props from parent component that handles state for them.
-`Containers` are mostly parent containers with state management and API requested where needed.
-`Routes` are set of mapping between container/componentsa and routes implemented with React V4 router.
-`Services` are API calls with fetch library on backend API.
-`Utils` are some helper objects like local storage wrapper, random generator etc.
+* `Components` are views that don't hold state and get their props from parent component that handles state for them.
+
+* `Containers` are mostly parent containers with state management and API requested where needed.
+
+* `Routes` are set of mapping between container/componentsa and routes implemented with React V4 router.
+
+* `Services` are API calls with fetch library on backend API.
+
+* `Utils` are some helper objects like local storage wrapper, random generator etc.
